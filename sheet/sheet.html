@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>excel sheet</title>
+	<link rel="stylesheet" type="text/css" href="sheetcss.css">
+
+</head>
+<body >
+<h2>Create an excel sheet</h2>
+
+<form name="forms" method="post">
+Enter no of rows:<br>
+	<input id="row" type="text" name="name" placeholder="rows"><br>
+Enter no of columns:<br>
+	<input id="col" type="text" name="name" placeholder="columns"><br><br>
+<button type="button" onclick="sheet()">Create</button> 
+</form>
+<br><br>
+<table id="c">
+</table>
+<script type="text/javascript">
+	function sheet(){
+		var x,y,i,j;
+		x=document.getElementById("row").value;
+		y=document.getElementById("col").value;
+		var table=" ";
+
+	for( i=0 ; i<x ; i++)
+		
+			{
+		table +="<tr>" ;
+		for(j=0;j<y;j++){
+			table+="<td><input class='cl' onmousedown=\"style='background-color:#ffe6b3; width:250px'\"  type=\"text\"></td>";
+		}
+
+	table+="</tr>";
+	}
+	
+	document.getElementById("c").innerHTML=table;
+}
+
+</script>
+</body>
+</html>

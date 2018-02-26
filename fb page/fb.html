@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>facebook page</title>
+
+<link rel="stylesheet" type="text/css" href="fbstyle.css">
+</head>
+<body>
+<form class="head">
+<span class="fb"><b>facebook</b></span>
+<div class="right submit">
+    <button type="button" onclick="login()">Log In</button></div>
+<div class="right">
+Password<br>
+<input type="password" name="password" placeholder="password"><br>
+<a href="#" onclick="secure()">Forgot password?</a><br>
+</div>
+
+<div class="right">
+Email <br>
+<input type="text" name="mail" placeholder="Email"><br>
+<input type="checkbox" name="checkbox">keep me logged in
+</div>
+
+</form>
+
+<div  class="sign">
+<h3><b>Sign up!</b><br>It's free and anyone can join</h3>
+</div>
+<div>
+<p class="p"><b>facebook helps you share and connect with the <br>people in your life.</b></p>
+</div>
+<br>
+
+<div>
+<form  class="form2" >
+	<input type="text" name="name" placeholder="First name" size="15">
+	<input type="text" name="name" placeholder="Last name" size="15"><br><br>
+    <input type="text" name="name" placeholder="Mobile No or Email address"  size="38"><br><br>
+    <input type="password" name="psd" placeholder= "enter password" size="38"><br><br>
+    <input type="date" name="name" placeholder="Birthday" size="38"><br><br>
+    <b><input type="radio" name="in">Female <input type="radio" name="in"> Male</b><br><br>
+
+    <button class="create" type="button" onclick="creates()"> Create Account</button>
+ 
+
+
+</form>
+</div>
+
+<script>
+	function creates(){
+		document.write("<h1 style='text-align:center;color:tomato red; margin-top:150px; background-color:#ffb3b3; border-left:10px solid #660000 ; padding:40px;'>Congratulations! you have successfully created your account.</h1>");
+	}
+	function login(){ 
+         window.alert("Enter valid id or password!");                                                         //class is not applicable from 
+         	                                                                                           //styleshhet here in script. 
+	}
+	function secure(){
+		document.write("<h2>Here's your security question:</h2><br><p style='font-size:24px;padding-left:20px;'>Q.What is the name of your pet?<br></h2>");
+
+	}
+	
+	</script>
+
+
+</html>
+

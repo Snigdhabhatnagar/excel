@@ -1,0 +1,90 @@
+body {
+	background-image: url("fb1.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	
+	background-size: 100%;
+}
+
+.head{
+	background-color: #3b5998;
+	width: 100%;
+	height: 150px;
+	color: white;
+	padding-top: 70px;
+	box-sizing: border-box;
+
+}
+
+a {text-decoration: none;
+ color: skyblue;
+
+}
+
+div.right {
+		float: right;
+		
+	}
+
+	div.submit {
+		
+padding: 20px;
+color: white;
+cursor: pointer;
+
+}
+
+span.fb{
+	padding: 50px;
+	font-size: 40px;
+	margin-top: 40px;
+}
+
+.sign{font-size: 24px;
+	float: right;
+}
+
+
+.form2{ margin-left: 400px;
+	float: right;
+}
+
+.create{
+
+	background-color: #009933;
+	color: white;
+	font-size: 22px;
+	border-radius: 10px;
+	padding: 10px;
+	font-family: Arial;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.create:hover {
+	opacity: 0.8;
+	box-shadow: 4px;
+	cursor: pointer;
+}
+
+
+.p{
+	font-size: 25px;
+	color: #3b5998
+}
+
+h1.f{
+	text-align:center;color:tomato red; margin-top:150px; background-color:#ffb3b3; border-left:10px solid #660000 ; padding:10px;
+}
+
+
+ input[type=text]:focus , input[type=password]:focus , input[type=date]:focus{
+ 	border-color:#909090;
+ 	border-radius: 5px;
+
+
+}
+
+ input[type=text], input[type=password], input[type=date]{
+ 	padding: 3px;
+
+ }

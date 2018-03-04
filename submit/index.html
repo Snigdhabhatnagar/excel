@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>facebook page</title>
+
+<link rel="stylesheet" type="text/css" href="fbstyle.css">
+</head>
+<body >
+
+<form class="head">
+<span class="fb"><b>facebook</b></span>
+<div class="right submit">
+    <button type="button" onclick="login()">Log In</button></div>
+<div class="right">
+Password<br>
+<input type="password" name="password" placeholder="password"><br>
+<a href="#" onclick="secure()">Forgot password?</a><br>
+</div>
+
+<div class="right">
+Email <br>
+<input type="text" name="mail" placeholder="Email"><br>
+<input type="checkbox" name="checkbox">keep me logged in
+</div>
+
+</form>
+
+<div  class="sign">
+<h3><b>Sign up!</b><br>It's free and anyone can join</h3>
+</div>
+<div>
+<p class="p"><b>facebook helps you share and connect with the <br>people in your life.</b></p>
+</div>
+<br>
+
+<div>
+<form  class="form2" >
+	<input id="firstName" type="text" name="name" placeholder="First name" size="15">
+	<input id="lastName" type="text" name="name" placeholder="Last name" size="15"><br><br>
+    <input id="mobileNo" type="text" name="name" placeholder="Mobile No or Email address"  size="38"><br><br>
+    <input id="" type="password" name="psd" placeholder= "enter password" size="38"><br><br>
+    <input id="birth" type="date" name="name" placeholder="Birthday" size="38"><br><br>
+    <b><input type="radio" name="in">Female <input type="radio" name="in"> Male</b><br><br>
+
+    <button class="create" type="button" onclick="creates()"> Create Account</button>
+ 
+
+
+</form>
+</div>
+<table id="c">
+</table>
+<script>
+	function creates(){
+		var y=[document.getElementById("firstName").placeholder,
+		document.getElementById("lastName").placeholder,
+		document.getElementById("mobileNo").placeholder,
+		document.getElementById("birth").placeholder,];
+		
+		var x=[document.getElementById("firstName").value,
+		document.getElementById("lastName").value,
+		document.getElementById("mobileNo").value,
+		document.getElementById("birth").value,
+       ]; 
+       var table=' ';
+      
+for(var i=0;i<4;i++){
+       table += "<tr>" + "<th>"+ y[i] +"</th>"+"<td>"+x[i]+"</td>" + "</tr>" ;
+}
+
+		document.getElementById("c").innerHTML=table;
+}
+
+	function login(){ 
+         window.alert("Enter valid id or password!");                                                         //class is not           applicable from 
+         	                                                                                           //styleshhet here in script. 
+	}
+	function secure(){
+		document.write("<h2>Here's your security question:</h2><br><p style='font-size:24px;padding-left:20px;'>Q.What is the name of your pet?<br></h2>");
+	}
+	
+	</script>
+
+
+</html>
+
+		
